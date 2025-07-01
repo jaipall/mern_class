@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #root{
+            /* height: 400px; */
+            /* width: 100px; */
+            /* display: grid;
+            grid-template-columns: repeat(auto-fit,320px);  */
+            /* gap: 10px; */
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap; 
+            padding: 1rem;
+            gap: 2rem;
+        }
+        .card {
+            border: 1px solid lightgray;
+            background-color: antiquewhite;
+            border-radius: 1rem;
+            padding: 1.25rem;
+            transition: background-color 5mm ease;
+        }
+
+        .card:hover{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Recipe Store</h2>
+        <button>Home</button>
+    </header>
+    <main id="root">
+        <div class="card">
+            <p>DUMMY CARD TITLE</p>
+            <p>DUMMY Cuisine</p>
+            <p>DUMMY Rating</p>
+            <p>DUMMY Serving</p>
+
+            <button onclick="handleCard({
+                name: 'pizza',
+                cusine: 'italian',
+                rating: 4,
+                servings:3,
+            })">Click ME</button>
+
+            <!-- <button onclick="handleCard()">Click Me</button> -->
+        </div>
+     </main>
+
+    <footer>thanks</footer>
+
+    <div id="pop-up-view" style="display: none;">
+        <div id="pop-up-contain"> 
+            <p>hello</p>
+            <!-- <div id="pop-up-content">
+
+            </div> -->
+            <button onclick="handleClosePopUp()">close</button>
+        </div>
+    </div>  
+
+    <script src="app.js"></script>
+</body>
+</html>

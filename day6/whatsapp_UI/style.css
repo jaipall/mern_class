@@ -1,0 +1,30 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#whatsapp-web-root{
+    display: grid;
+    grid-template-columns: 100px 1fr 0fr;
+    height: 100vh;
+}
+
+#left-menu{
+    background-color: grey;
+}
+
+#chat-list{
+    background-color: rgb(240,236,236  );
+}
+
+#chat-message-centain{
+    background-color: #cfd2d3;
+    display: none;
+}
+
+.icon{
+    height: 60px;
+    width: 60px;
+    background-color: lightgoldenrodyellow;
+}

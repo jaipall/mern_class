@@ -1,4 +1,4 @@
-//
+//Arrow function
 
 // const printBill = function (txt) {
 //     console.log("---------------");
@@ -13,7 +13,6 @@
 //     console.log("----------------");
 // };
 // // printBill(100);
-
 
 // const calculateBillAmountForFood = (price) => {
 //     return price*1.05;
@@ -40,52 +39,51 @@
 
 //----------------------------------------------------
 const printBillForAll = (txt) => {
-    console.log("---------------");
-    console.log("Rs.",txt);
-    console.log("----------------");
+  console.log("---------------");
+  console.log("Rs.", txt);
+  console.log("----------------");
 };
 // printBill(100);
 
 const printBillForFood = (txt) => {
-    console.log("---------------");
-    console.log("Your Bill for Food")
-    console.log("Rs.",txt);
-    console.log("----------------");
+  console.log("---------------");
+  console.log("Your Bill for Food");
+  console.log("Rs.", txt);
+  console.log("----------------");
 };
 
 const printBillForFoodAndDrinks = (txt) => {
-    console.log("---------------");
-    console.log("Your bill for Food and Drinks");
-    console.log("Rs.",txt);
-    console.log("----------------");
+  console.log("---------------");
+  console.log("Your bill for Food and Drinks");
+  console.log("Rs.", txt);
+  console.log("----------------");
 };
 
 const calculateBillAmountForFood = (price) => {
-    return price*1.05;
+  return price * 1.05;
 };
 
 const calculateBillForDrinks = (price) => {
-    return price*1.2;
+  return price * 1.2;
 };
 
 const calcuateBillForClothes = (price) => {
-    return price*1.12;
+  return price * 1.12;
 };
-
 
 // Higer Order funcion -->
 // The function which accept another funnction as a parameter Or return a function;
-const totalcalculation = (food, cloths, drinks,cb) => {
-    const foodAmount=calculateBillAmountForFood(food);
-    const clothsAmount=calcuateBillForClothes(cloths);
-    const drinksAmount=calculateBillForDrinks(drinks);
+const totalcalculation = (food, cloths, drinks, cb) => {
+  const foodAmount = calculateBillAmountForFood(food);
+  const clothsAmount = calcuateBillForClothes(cloths);
+  const drinksAmount = calculateBillForDrinks(drinks);
 
-    const finalAmounnt=foodAmount+clothsAmount+drinksAmount;
-    // printBill(finalAmounnt);
-    cb(finalAmounnt);
-}
+  const finalAmounnt = foodAmount + clothsAmount + drinksAmount;
+  // printBill(finalAmounnt);
+  cb(finalAmounnt);
+};
 
 // totalcalculation(100,400,200);
-totalcalculation(100,400,200,printBillForAll);
-totalcalculation(100,0,200,printBillForFoodAndDrinks);
-totalcalculation(100,0,0,printBillForFood);
+totalcalculation(100, 400, 200, printBillForAll);
+totalcalculation(100, 0, 200, printBillForFoodAndDrinks);
+totalcalculation(100, 0, 0, printBillForFood);
