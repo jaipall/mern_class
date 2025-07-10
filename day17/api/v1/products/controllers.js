@@ -134,7 +134,7 @@ const deleteProductController = async (req, res) => {
   const newProduct = await Product.findByIdAndDelete(productId);
 
   try {
-    res.status(201);
+    res.status(204);
     res.json({
       isSuccess: true,
       message: "Product is delected ",
