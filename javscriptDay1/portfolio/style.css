@@ -1,0 +1,185 @@
+.navbar_detals{
+    background-color: rgb(162, 18, 184);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+.personal_detail{
+    font-size:14px;
+    line-height:1.4;
+
+}
+
+.personal_detail .name{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav_links{
+    display: flex;
+    gap: 20px;
+}
+
+.nav_links a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.35 ease;
+}
+
+.nav_links a:hover{
+    color: #ffd966;
+}
+
+@media(max-width:600px){
+    .navbar_detals{
+        flex-direction:column;
+        align-items: flex-start;
+    }
+    .nav_links{
+        margin-top: 10px;
+    }
+}
+
+.intro-details{
+    display: flex;
+}
+
+.student-img{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.student-img .st-img{
+    width: 200px;
+    height: 200px;
+}
+
+.st-line{
+    size: auto;
+}
+
+.st-line .st-f{
+    font-size: 40px;
+    color: #ecb718;
+}
+
+.skill_details{
+    margin: 10px;
+}
+
+.skill-title{
+    margin: 20px;
+}
+
+.skill-title .title{
+    font-size: 30px;
+    color: rgb(162, 18, 184);
+}
+
+.all-skill{
+     display: flex;
+    flex-wrap: wrap;       /* allows items to wrap to new rows */
+    gap: 20px;             /* space between blocks */
+    justify-content: center; /* center them horizontally */
+}
+
+
+
+.p-skill {
+  width: 200px;
+    height: 200px;
+
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 80px;
+
+    border: 3px solid white;
+    border-radius: 20px;
+    background-color: rgb(162, 18, 184);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-details{
+    margin: 20px;
+}
+
+.project-title{
+    margin: 20px;
+}
+
+.project-title .p-title{
+    font-size: 40px;
+    color: rgb(162, 18, 184);
+}
+
+.project-container{
+    margin: 20px;
+}
+
+.project-contain1{
+    margin: 20px;
+}
+
+.project-contain1 .p-1{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.project-contain1 .p-1-contain{
+    margin: 20px;
+    text-align: start;
+}
+
+.Recommendations-details{
+    margin: 20px;
+}
+.rec-title{
+    margin: 20px;
+}
+
+.rec-title .rec-t{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(162, 18, 184);
+}
+
+.rec-contain{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px;
+}
+.contact-container{
+    /* display: flex; */
+    justify-items: center;
+    align-items: center;
+}
+.c-title{
+    margin: 20px;
+}
+.c-title .c-t{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(162, 18, 184);
+}
